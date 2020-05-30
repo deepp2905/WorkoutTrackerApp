@@ -7,16 +7,9 @@
     android:layout_margin="10dp"
     tools:context=".WorkoutLog">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:background="#CC1C1B1B"
-        android:foregroundGravity="center_horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </androidx.recyclerview.widget.RecyclerView>
-
-
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
