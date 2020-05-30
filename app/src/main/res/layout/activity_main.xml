@@ -28,6 +28,11 @@
 
         <Button
             style="@style/ButtonStyle"
+            android:text="TEST 2">
+        </Button>
+
+        <Button
+            style="@style/ButtonStyle"
             android:text="TEST">
         </Button>
         <Button
