@@ -10,53 +10,30 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@color/colorAccent"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp"
         android:clipToPadding="false">
 
         <Button
             android:id="@+id/button1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginBottom="0dp"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif-black"
-            android:text="Log Workout"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            android:textStyle="italic" />
+            style="@style/ButtonStyle"
+            android:text="Log Workout" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginBottom="0dp"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif-black"
-            android:text="Interval Timer"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            android:textStyle="italic" />
+            style="@style/ButtonStyle"
+            android:text="Interval Timer">
+        </Button>
 
         <Button
+            style="@style/ButtonStyle"
+            android:text="TEST">
+        </Button>
+        <Button
             android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="40dp"
+            style="@style/ButtonStyle"
             android:layout_marginBottom="20dp"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif-black"
-            android:text="History"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            android:textStyle="italic" />
+            android:text="History" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
