@@ -9,24 +9,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:background="@color/colorPrimaryDark"
+        android:clipToPadding="false"
+        android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        android:clipToPadding="false">
+        tools:layout_editor_absoluteY="1dp">
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/log"
             style="@style/ButtonStyle"
             android:text="Log Workout" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/timer"
             style="@style/ButtonStyle"
-            android:text="Interval Timer"/>
+            android:text="Interval Timer" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/history"
             style="@style/ButtonStyle"
             android:layout_marginBottom="20dp"
             android:text="History" />

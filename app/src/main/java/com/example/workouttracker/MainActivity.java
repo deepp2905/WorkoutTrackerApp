@@ -2,7 +2,12 @@ package com.example.workouttracker;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+import java.util.Timer;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,9 +37,37 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        ///setting onclick for each button
+        Button log = (Button) findViewById(R.id.log);
+        log.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent logWorkoutActivity = new Intent(MainActivity.this,WorkoutLog.class);
+                startActivity(logWorkoutActivity);
+            }
+        });
+
+
+        Button timer = (Button) findViewById(R.id.timer);
+        timer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent timerActivity = new Intent(MainActivity.this, IntervalTimer.class);
+                startActivity(timerActivity);
+            }
+        });
+
+        Button history = (Button) findViewById(R.id.history);
+        history.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent historyActivity = new Intent(MainActivity.this,History.class);
+                startActivity(historyActivity);
+            }
+        });
+
     }
-
-
-
 
 }
