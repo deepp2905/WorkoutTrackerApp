@@ -9,17 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".History"
-            android:label="History"/>
-        <activity
-            android:name=".IntervalTimer"
-            android:label="Interval Timer"/>
-        <activity
-            android:name=".WorkoutLog"
-            android:label="New Workout"/>
-        <activity
-            android:name=".MainActivity">
+        <activity android:name=".History" />
+        <activity android:name=".IntervalTimer" />
+        <activity android:name=".WorkoutLog" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
